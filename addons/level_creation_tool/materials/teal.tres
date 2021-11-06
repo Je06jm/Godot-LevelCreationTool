@@ -1,0 +1,22 @@
+[gd_resource type="ShaderMaterial" load_steps=4 format=2]
+
+[ext_resource path="res://addons/level_creation_tool/BuilderMaterial.gd" type="Script" id=1]
+[ext_resource path="res://addons/level_creation_tool/textures/teal.png" type="Texture" id=2]
+[ext_resource path="res://addons/level_creation_tool/shaders/shape.shader" type="Shader" id=3]
+
+[resource]
+shader = ExtResource( 3 )
+shader_param/uv_offset = null
+shader_param/uv_scale = Vector2( 1, 1 )
+shader_param/normalmap_scale = 1.0
+shader_param/has_albedo = true
+shader_param/has_metalic = false
+shader_param/has_roughness = false
+shader_param/has_ao = false
+shader_param/has_emission = false
+shader_param/has_normalmap = false
+shader_param/type = null
+shader_param/albedo = ExtResource( 2 )
+script = ExtResource( 1 )
+albedo = ExtResource( 2 )
+normalmap_scale = 1.0

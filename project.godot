@@ -1,0 +1,49 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+_global_script_classes=[ {
+"base": "MeshInstance",
+"class": "BuilderBasic",
+"language": "GDScript",
+"path": "res://addons/level_creation_tool/shapes/BuilderBasic.gd"
+}, {
+"base": "BuilderBasic",
+"class": "BuilderBox",
+"language": "GDScript",
+"path": "res://addons/level_creation_tool/shapes/BuilderBox.gd"
+}, {
+"base": "BuilderBasic",
+"class": "BuilderCylinder",
+"language": "GDScript",
+"path": "res://addons/level_creation_tool/shapes/BuilderCylinder.gd"
+}, {
+"base": "ShaderMaterial",
+"class": "BuilderMaterial",
+"language": "GDScript",
+"path": "res://addons/level_creation_tool/BuilderMaterial.gd"
+} ]
+_global_script_class_icons={
+"BuilderBasic": "",
+"BuilderBox": "",
+"BuilderCylinder": "",
+"BuilderMaterial": ""
+}
+
+[application]
+
+config/name="LevelCreationTool"
+
+[editor_plugins]
+
+enabled=PoolStringArray( "res://addons/level_creation_tool/plugin.cfg" )
+
+[physics]
+
+common/enable_pause_aware_picking=true
