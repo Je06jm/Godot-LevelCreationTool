@@ -11,7 +11,7 @@ export(Texture) var normalmap : Texture = null setget _set_normalmap, _get_norma
 export(float) var normalmap_scale := 1.0 setget _set_normalmap_scale, _get_normalmap_scale
 
 func _init():
-	shader = preload("res://addons/level_creation_tool/shaders/cube.shader")
+	shader = preload("res://addons/level_creation_tool/shaders/shape.shader")
 
 func _get_albedo():
 	return albedo
